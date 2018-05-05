@@ -1,0 +1,20 @@
+ul{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+dd{
+	margin: 0
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+$basicColor: #eb5d0a;
+$activeColor: #12a2d4;
+$overColor: #aaa;

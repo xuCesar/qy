@@ -1,0 +1,579 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>qytest</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.css" />
+    <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/talent-list.css">
+    <!-- <link rel="stylesheet" href="styles/index.css"> -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="app">
+      
+      <header id="header" class="header">
+          <div class="container">
+
+              <div class="header_bar">
+                <div class="left_wrap">
+                    <span class="header_logo">
+                        <img src="images/header_logo.png" alt="">
+                    </span>
+                    <span class="header_index">
+                      <a href="#">潜渊信息首页</a>
+                    </span> 
+                </div>
+                  
+                <div class="right_wrap">
+                    <span class="user_login_up">注册</span>
+                    <span>|</span>
+                    <span class="user_login_in">登录</span>
+                </div>
+              </div>
+          </div>
+      </header><!-- /header -->
+
+      <nav id="nav" class="nav">
+          <div class="container">
+            <div class="nav_wrap">
+                <div class="logo">
+                  <a href=""><img src="images/logo.png" alt=""></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="talent.html">人才中心</a></li>
+                    <li><a href="project-center.html">项目中心</a></li>
+                    <li><a href="contract.html">签约经纪人</a></li>
+                    <li><a href="personal-center.html">个人中心</a></li>
+                    <li><a href="help-center.html">帮助中心</a></li>
+                </ul>
+            </div>
+          </div>
+      </nav>
+
+      <div class="index_slogan">
+            <div class="ui column stackable grid container">
+
+                <div class="ui left floated six wide column">
+                      <div class="slogan ">
+                          <img src="images/nav_slogan.png" alt="">
+                      </div>
+                </div>
+                <div class="ui right floated five wide column">
+                      <div class="group_btn">
+                        <div class="test_btn">评测我的能力</div>
+                        <div class="tproject_btn">发起新的项目</div>
+                    </div>
+                </div>
+                
+            </div>
+      </div>
+
+
+      <div class="talent_list">
+          
+          <div class="ui column stackable grid container">
+                <div class="row ">
+                    <div class="ui breadcrumb">
+                        <a class="section">潜渊信息</a>
+                        <i class="right angle icon divider"></i>
+                        <a class="section">人才中心</a>
+                        <i class="right angle icon divider"></i>
+                        <a class="active section">人才搜索</a>
+                    </div>
+                </div>
+
+                <div class="selectNumberScreen">
+                  <div id="selectList" class="screenBox screenBackground">
+                    <dl class="listIndex" attr="">
+                      <dt>专长：</dt>
+                      <dd class="list_indus">
+                        <span class="selected" attrval="全部">全部</span> 
+                        <span attrval="互联网金融">互联网金融</span> 
+                        <span attrval="电商">电商</span>
+                        <span attrval="digital">digital</span> 
+                        <span attrval="区块链">区块链</span> 
+                        <span attrval="大数据手机">大数据手机</span> 
+                        <span attrval="AI人工智能">AI人工智能</span> 
+                        <span attrval="虚拟现实">虚拟现实</span> 
+                        <span attrval="金融证券">金融证券</span> 
+                        <span attrval="养殖业">养殖业</span> 
+                        <span attrval="农林牧渔">农林牧渔</span> 
+                        <span attrval="运输业">运输业</span>
+                        <span attrval="建筑业">建筑业</span>
+                        <span attrval="大景观">大景观</span>
+                        <span attrval="设计">设计</span>
+                        <span attrval="销售">销售</span> 
+                        <span class="more"><label>更多</label><em class="open"></em></span> 
+                      </dd>
+                    </dl>
+                    <dl class="listIndex" attr="价格范围">
+                      <dt>职位：</dt>
+                      <dd>
+                        <span class="selected" attrval="不限">不限</span> 
+                        <span attrval="ceo">ceo</span>
+                        <span attrval="coo">coo</span>
+                        <span attrval="cfo">cfo</span>
+                        <span attrval="cio">cio</span>
+                        <span attrval="cmo">cmo</span>
+                      </dd>
+                    </dl>
+                    <dl class=" listIndex" attr="">
+                      <dt>性别：</dt>
+                      <dd>
+                        <span class="selected" attrval="不限">不限</span> 
+                        <span attrval="男">男</span> 
+                        <span attrval="女">女</span>
+                      </dd>
+                    </dl>
+                    <dl class=" listIndex" attr="">
+                      <dt>年龄：</dt>
+                      <dd>
+                        <span class="selected" attrval="不限">不限</span> 
+                        <span attrval="16-18岁">16-18岁</span> 
+                        <span attrval="19-25岁">19-25岁</span>
+                        <span attrval="26-30岁">26-30岁</span>
+                        <span attrval="41-50岁">41-50岁</span>
+                        <span attrval="50岁以上">50岁以上</span>
+                      </dd>
+                    </dl>
+                    <dl class=" listIndex" attr="">
+                      <dt>学历：</dt>
+                      <dd>
+                        <span class="selected" attrval="不限">不限</span> 
+                        <span attrval="初中">初中</span> 
+                        <span attrval="高中/中专">高中/中专</span>
+                        <span attrval="大专">大专</span>
+                        <span attrval="本科">本科</span>
+                        <span attrval="硕士">硕士</span>
+                        <span attrval="博士及以上">博士及以上</span>
+                      </dd>
+                    </dl>
+                    <dl class=" listIndex" attr="">
+                      <dt>经验：</dt>
+                      <dd>
+                        <span class="selected" attrval="不限">不限</span> 
+                        <span attrval="1年以内">1年以内</span> 
+                        <span attrval="1-3年">1-3年</span>
+                        <span attrval=" 3-5年"> 3-5年</span>
+                        <span attrval="5-8年">5-8年</span>
+                        <span attrval="8-10年">8-10年</span>
+                        <span attrval="10-15年">10-15年</span>
+                        <span attrval="15-20年">15-20年</span>
+                        <span attrval="20年以上">20年以上</span>
+                      </dd>
+                    </dl>
+                    
+                  </div>
+                  <div class="ability_value">
+                      <dl>
+                        <!-- <dd><input type="text" name="" value="" placeholder=""></dd>
+                        <dd><input type="text" name="" value="" placeholder=""></dd> -->
+                        <div class="ui form">
+
+                          <div class="inline fields">
+                              <span>能力：</span>
+                              <div class="one wide field">
+                                  <!-- <div class="four fields">
+                                      <div class="field"> -->
+                                        <select class="ui fluid search dropdown" name="card[expire-month]">
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option>
+                                          <option value="10">10</option>
+                                          <option value="11">11</option>
+                                          <option value="12">12</option>
+                                          <option value="99">99</option>
+                                        </select>
+                                      <!-- </div>
+                                  </div> -->
+                              </div>
+
+                              <div class="one wide field">
+                                  <!-- <div class="four fields"> -->
+                                      <!-- <div class="field"> -->
+                                        <select class="ui fluid search dropdown">
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option>
+                                          <option value="10">10</option>
+                                          <option value="11">11</option>
+                                          <option value="12">12</option>
+                                          <option value="100">100</option>
+                                        </select>
+                                      <!-- </div> -->
+                                  <!-- </div> -->
+                              </div>
+
+                              <button class="ui red button">确定</button>
+                                  
+
+                          </div>
+
+                          
+
+
+
+                        </div>
+
+
+
+                      </dl>
+                  </div>
+                  <div class="hasBeenSelected">
+                    <dl>
+                      <dt>您已选择：</dt>
+                      <dd class=clearDd>
+                      <div class=clearList></div>
+                      <div class="clear_key">清除筛选条件</div>
+                    </dl>
+                  </div>
+                </div>
+
+          </div>
+
+          <div class="ui column stackable grid container">
+                <div class="ui divided items ">
+
+                  <div class="item" id="item">
+                      <div class="ui tiny image"> <img src="images/photo/01.png"> </div>
+                      <div class="middle aligned content ">
+                          <div class="meta_group">
+                              <div class="meta">
+                                  <a class="header" href="talent-info.html">张三</a>
+                                  <span>男</span>
+                                  <span>48岁</span>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column"> 学历：<span>本科</span> </div>
+                                <div class="column"> 工作经验：<span>8年以上</span> </div>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column">擅长领域：<span>互联网金融、大数据</span></div>
+                                <div class="column">担任职务：<span>职位一、职位二、职位三</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui column grid">
+                          <div class="meta ability">综合能力值：86</div>
+                          <div class="ui floated right btn"><button class="ui red button">签约邀请</button></div>
+                      </div>
+                  </div>
+
+                  <div class="item" id="item">
+                      <div class="ui tiny image"> <img src="images/photo/03.png"> </div>
+                      <div class="middle aligned content ">
+                          <div class="meta_group">
+                              <div class="meta">
+                                  <a class="header" href="talent-info.html">张三</a>
+                                  <span>男</span>
+                                  <span>48岁</span>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column"> 学历：<span>本科</span> </div>
+                                <div class="column"> 工作经验：<span>8年以上</span> </div>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column">擅长领域：<span>互联网金融、大数据</span></div>
+                                <div class="column">担任职务：<span>职位一、职位二、职位三</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui column grid">
+                          <div class="meta ability">综合能力值：86</div>
+                          <div class="ui floated right btn"><button class="ui blue button">签约邀请</button></div>
+                      </div>
+                  </div>
+
+                  <div class="item" id="item">
+                      <div class="ui tiny image"> <img src="images/photo/02.png"> </div>
+                      <div class="middle aligned content ">
+                          <div class="meta_group">
+                              <div class="meta">
+                                  <a class="header" href="talent-info.html">张三</a>
+                                  <span>男</span>
+                                  <span>48岁</span>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column"> 学历：<span>本科</span> </div>
+                                <div class="column"> 工作经验：<span>8年以上</span> </div>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column">擅长领域：<span>互联网金融、大数据</span></div>
+                                <div class="column">担任职务：<span>职位一、职位二、职位三</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui column grid">
+                          <div class="meta ability">综合能力值：86</div>
+                          <div class="ui floated right btn"><button class="ui red button">签约邀请</button></div>
+                      </div>
+                  </div>
+
+                  <div class="item" id="item">
+                      <div class="ui tiny image"> <img src="images/photo/03.png"> </div>
+                      <div class="middle aligned content ">
+                          <div class="meta_group">
+                              <div class="meta">
+                                  <a class="header" href="talent-info.html">张三</a>
+                                  <span>男</span>
+                                  <span>48岁</span>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column"> 学历：<span>本科</span> </div>
+                                <div class="column"> 工作经验：<span>8年以上</span> </div>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column">擅长领域：<span>互联网金融、大数据</span></div>
+                                <div class="column">担任职务：<span>职位一、职位二、职位三</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui column grid">
+                          <div class="meta ability">综合能力值：86</div>
+                          <div class="ui floated right btn"><button class="ui blue button">已经签约</button></div>
+                      </div>
+                  </div>
+
+                  <div class="item" id="item">
+                      <div class="ui tiny image"> <img src="images/photo/01.png"> </div>
+                      <div class="middle aligned content ">
+                          <div class="meta_group">
+                              <div class="meta">
+                                  <a class="header" href="talent-info.html">张三</a>
+                                  <span>男</span>
+                                  <span>48岁</span>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column"> 学历：<span>本科</span> </div>
+                                <div class="column"> 工作经验：<span>8年以上</span> </div>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column">擅长领域：<span>互联网金融、大数据</span></div>
+                                <div class="column">担任职务：<span>职位一、职位二、职位三</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui column grid">
+                          <div class="meta ability">综合能力值：86</div>
+                          <div class="ui floated right btn"><button class="ui red button">签约邀请</button></div>
+                      </div>
+                  </div>
+
+                  <div class="item" id="item">
+                      <div class="ui tiny image"> <img src="images/photo/02.png"> </div>
+                      <div class="middle aligned content ">
+                          <div class="meta_group">
+                              <div class="meta">
+                                  <a class="header" href="talent-info.html">张三</a>
+                                  <span>男</span>
+                                  <span>48岁</span>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column"> 学历：<span>本科</span> </div>
+                                <div class="column"> 工作经验：<span>8年以上</span> </div>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column">擅长领域：<span>互联网金融、大数据</span></div>
+                                <div class="column">担任职务：<span>职位一、职位二、职位三</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui column grid">
+                          <div class="meta ability">综合能力值：86</div>
+                          <div class="ui floated right btn"><button class="ui blue button">签约邀请</button></div>
+                      </div>
+                  </div>
+
+                  <div class="item" id="item">
+                      <div class="ui tiny image"> <img src="images/photo/01.png"> </div>
+                      <div class="middle aligned content ">
+                          <div class="meta_group">
+                              <div class="meta">
+                                  <a class="header" href="talent-info.html">张三</a>
+                                  <span>男</span>
+                                  <span>48岁</span>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column"> 学历：<span>本科</span> </div>
+                                <div class="column"> 工作经验：<span>8年以上</span> </div>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column">擅长领域：<span>互联网金融、大数据</span></div>
+                                <div class="column">担任职务：<span>职位一、职位二、职位三</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui column grid">
+                          <div class="meta ability">综合能力值：86</div>
+                          <div class="ui floated right btn"><button class="ui red button">签约邀请</button></div>
+                      </div>
+                  </div>
+
+                  <div class="item" id="item">
+                      <div class="ui tiny image"> <img src="images/photo/02.png"> </div>
+                      <div class="middle aligned content ">
+                          <div class="meta_group">
+                              <div class="meta">
+                                  <a class="header" href="talent-info.html">张三</a>
+                                  <span>男</span>
+                                  <span>48岁</span>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column"> 学历：<span>本科</span> </div>
+                                <div class="column"> 工作经验：<span>8年以上</span> </div>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column">擅长领域：<span>互联网金融、大数据</span></div>
+                                <div class="column">担任职务：<span>职位一、职位二、职位三</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui column grid">
+                          <div class="meta ability">综合能力值：86</div>
+                          <div class="ui floated right btn"><button class="ui blue button">签约邀请</button></div>
+                      </div>
+                  </div>
+
+                  <div class="item" id="item">
+                      <div class="ui tiny image"> <img src="images/photo/01.png"> </div>
+                      <div class="middle aligned content ">
+                          <div class="meta_group">
+                              <div class="meta">
+                                  <a class="header" href="talent-info.html">张三</a>
+                                  <span>男</span>
+                                  <span>48岁</span>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column"> 学历：<span>本科</span> </div>
+                                <div class="column"> 工作经验：<span>8年以上</span> </div>
+                              </div>
+                              <div class="meta ui three column grid">
+                                <div class="column">擅长领域：<span>互联网金融、大数据</span></div>
+                                <div class="column">担任职务：<span>职位一、职位二、职位三</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui column grid">
+                          <div class="meta ability">综合能力值：86</div>
+                          <div class="ui floated right btn"><button class="ui red button">签约邀请</button></div>
+                      </div>
+                  </div>
+
+
+                </div>
+
+                <div class="page_turn row">
+                    <div class="ui right floated pagination menu">
+                        <a class="icon item">
+                          <i class="left chevron icon"></i>
+                        </a>
+                        <a class="item">1</a>
+                        <a class="item">2</a>
+                        <a class="item">3</a>
+                        <a class="item">4</a>
+                        <a class="item">5</a>
+                        <a class="item">...</a>
+                        <a class="item">11</a>
+                        <a class="item">12</a>
+                        <a class="item">13</a>
+                        <a class="item">14</a>
+                        <a class="item">15</a>
+                        <a class="icon item">
+                          <i class="right chevron icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                
+          </div>
+
+
+
+
+      </div>
+
+
+      <div class="ui black inverted vertical footer " id="footer">
+          <div class="ui column stackable grid container">
+              <div class="foot">
+                  <ul>
+                    <li><a href="#">能力测评</a></li>
+                    <li><a href="#">人才中心</a></li>
+                    <li><a href="#">经纪人签约申请</a></li>
+                    <li><a href="#">项目中心</a></li>
+                    <li><a href="#">个人中心</a></li>
+                    <li><a href="#">关于潜渊信息</a></li>
+                  </ul>
+
+                  <p>2017-2018 潜渊信息版权所有    |   沪公网备案信息123456789    |    沪ICP证XXXXXXX</p>
+              </div>
+          </div>
+      </div>
+
+      
+    </div>
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/semantic/dist/semantic.js"></script>
+    <script src="/bower_components/swiper/dist/js/swiper.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/common.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

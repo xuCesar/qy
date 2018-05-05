@@ -1,0 +1,426 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>qytest</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.css" />
+    <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/project-center.css">
+    <!-- <link rel="stylesheet" href="styles/index.css"> -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="app">
+      
+      <header id="header" class="header">
+          <div class="container">
+
+              <div class="header_bar">
+                <div class="left_wrap">
+                    <span class="header_logo">
+                        <img src="images/header_logo.png" alt="">
+                    </span>
+                    <span class="header_index">
+                      <a href="#">潜渊信息首页</a>
+                    </span> 
+                </div>
+                  
+                <div class="right_wrap">
+                    <span class="user_login_up">注册</span>
+                    <span>|</span>
+                    <span class="user_login_in">登录</span>
+                </div>
+              </div>
+          </div>
+      </header><!-- /header -->
+
+      <nav id="nav" class="nav">
+          <div class="container">
+            <div class="nav_wrap">
+                <div class="logo">
+                  <a href=""><img src="images/logo.png" alt=""></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="talent.html">人才中心</a></li>
+                    <li><a href="project-center.html">项目中心</a></li>
+                    <li><a href="contract.html">签约经纪人</a></li>
+                    <li><a href="personal-center.html">个人中心</a></li>
+                    <li><a href="help-center.html">帮助中心</a></li>
+                </ul>
+            </div>
+          </div>
+      </nav>
+
+      <div class="index_slogan">
+            <div class="ui column stackable grid container">
+
+                <div class="ui left floated six wide column">
+                      <div class="slogan ">
+                          <img src="images/nav_slogan.png" alt="">
+                      </div>
+                </div>
+                <div class="ui right floated five wide column">
+                      <div class="group_btn">
+                        <div class="test_btn">评测我的能力</div>
+                        <div class="tproject_btn">发起新的项目</div>
+                    </div>
+                </div>
+                
+            </div>
+      </div>
+
+
+      <div class="project_center">
+          
+          <div class="ui column stackable grid container">
+                <div class="row ">
+                    <div class="ui breadcrumb">
+                        <a class="section">潜渊信息</a>
+                        <i class="right angle icon divider"></i>
+                        <a class="active section">项目中心</a>
+                    </div>
+                </div>
+
+                <div class="selectNumberScreen">
+                  <div id="selectList" class="screenBox screenBackground">
+                    <dl class="listIndex" attr="terminal_brand_s">
+                      <dt>行业领域：</dt>
+                      <dd class="list_indus">
+                        <span class="selected" attrval="全部">全部</span> 
+                        <span attrval="互联网金融">互联网金融</span> 
+                        <span attrval="电商">电商</span>
+                        <span attrval="digital">digital</span> 
+                        <span attrval="区块链">区块链</span> 
+                        <span attrval="大数据手机">大数据手机</span> 
+                        <span attrval="AI人工智能">AI人工智能</span> 
+                        <span attrval="虚拟现实">虚拟现实</span> 
+                        <span attrval="金融证券">金融证券</span> 
+                        <span attrval="养殖业">养殖业</span> 
+                        <span attrval="农林牧渔">农林牧渔</span> 
+                        <span attrval="运输业">运输业</span>
+                        <span attrval="建筑业">建筑业</span>
+                        <span attrval="大景观">大景观</span>
+                        <span attrval="设计">设计</span>
+                        <span attrval="销售">销售</span> 
+                        <span class="more"><label>更多</label><em class="open"></em></span> 
+                      </dd>
+                    </dl>
+                    <dl class="listIndex" attr="价格范围">
+                      <dt>项目类型：</dt>
+                      <dd>
+                        <span class="selected" attrval="全部">全部</span> 
+                        <span attrval="合伙人招募">合伙人招募</span>
+                        <span attrval="项目外包">项目外包</span>
+                        <span attrval="公司招聘">公司招聘</span>
+                        <span attrval="兼职招聘">兼职招聘</span>
+                        <span attrval="项目合作">项目合作</span>
+                      </dd>
+                    </dl>
+                    <dl class=" listIndex" attr="terminal_os_s">
+                      <dt>项目状态：</dt>
+                      <dd>
+                        <span class="selected" attrval="全部">全部</span> 
+                        <span attrval="待承接">待承接</span> 
+                        <span attrval="进行中">进行中</span>
+                        <span attrval="已完成">已完成</span>
+                      </dd>
+                    </dl>
+                    
+                  </div>
+                  <div class="hasBeenSelected">
+                    <dl>
+                      <dt>您已选择：</dt>
+                      <dd class=clearDd>
+                      <div class=clearList></div>
+                      <div class="clear_key">清除筛选条件</div>
+                    </dl>
+                  </div>
+                </div>
+
+                <table class="ui celled table">
+                  <thead>
+                      <tr>
+                        <th class="ui left aligned">项目名称</th>
+                        <th class="ui center aligned">项目类型</th>
+                        <th class="ui center aligned">需求方</th>
+                        <th class="ui center aligned">发布时间</th>
+                        <th class="ui center aligned">当前状态</th>
+                        <th class="ui center aligned">操作</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned"><a href="project-info.html">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned"><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">已完成</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> </td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">已完成</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> </td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                    <tr>
+                      <td>创业公司整体产品外包项目</td>
+                      <td class="ui center aligned">项目外包</td>
+                      <td class="ui center aligned">上海潜渊信息科技有限公司</td>
+                      <td class="ui center aligned">2017-06-01</td>
+                      <td class="ui center aligned">待承接</td>
+                      <td class="ui center aligned" ><a href="">项目详情</a> <a href="#">申请合作</a></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                          <th colspan="6">
+                          <div class="ui right floated pagination menu">
+                            <a class="icon item"> <i class="left chevron icon"></i> </a>
+                            <a class="item">1</a>
+                            <a class="item">2</a>
+                            <a class="item">3</a>
+                            <a class="item">4</a>
+                            <a class="icon item"> <i class="right chevron icon"></i> </a>
+                            <span class="ui center aligned item">共25页，218条</span>
+                          </div>
+                        </th>
+                      </tr>
+                </tfoot>
+                </table>
+
+
+          </div>
+
+
+
+
+      </div>
+
+
+      <div class="ui black inverted vertical footer " id="footer">
+          <div class="ui column stackable grid container">
+              <div class="foot">
+                  <ul>
+                    <li><a href="#">能力测评</a></li>
+                    <li><a href="#">人才中心</a></li>
+                    <li><a href="#">经纪人签约申请</a></li>
+                    <li><a href="#">项目中心</a></li>
+                    <li><a href="#">个人中心</a></li>
+                    <li><a href="#">关于潜渊信息</a></li>
+                  </ul>
+
+                  <p>2017-2018 潜渊信息版权所有    |   沪公网备案信息123456789    |    沪ICP证XXXXXXX</p>
+              </div>
+          </div>
+      </div>
+
+      
+    </div>
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/semantic/dist/semantic.js"></script>
+    <script src="/bower_components/swiper/dist/js/swiper.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/project-center.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

@@ -1,0 +1,190 @@
+@import './mixin.scss';
+
+
+#content{
+	width: 100%;
+	margin-top: 25px;
+
+	.grid{
+		margin: 0;
+	}
+
+	.container{
+		position: relative;
+	}
+
+	.banner{
+		width: 616px;
+		height: 329px;
+		float: left;
+		.carousel-control{
+			background-image: none;
+		}
+	}
+
+	.index_list{
+		.index_list_title{
+			font-size: 18px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #ddd;
+		}
+		.index_list_header{
+			
+			.column{
+				height: 30px;
+				line-height: 30px;
+				padding: 0;
+				cursor: pointer;
+			}
+			.column.active{
+				background-color: #ddd;
+			}
+		}
+		.segment{
+			border: none;
+			box-shadow: none;
+		}
+		.table{
+			margin: 0;
+			border: none;
+			box-shadow: none;
+
+		}
+		.ui.table thead th{
+			border-top: 1px solid rgba(34, 36, 38, 0.1);
+			background: none;
+		}
+		.ui.table tr td{
+			border-top: none;
+		}
+	}
+
+
+	.all_list{
+		width: 100%;
+		height: 36px;
+		text-align: center;
+		line-height: 36px;
+		border: 1px solid #eb5d0a;
+		color: #eb5d0a;
+		margin-top: 10px;
+		cursor: pointer;
+	}
+}
+
+.index_ads{
+	width: 100%;
+	height: 60px;
+	margin-top: 50px;
+	background-color: #eb5d0a;
+	.container{
+		position: relative;
+		height: 100%;
+	}
+	.index_center_rl{
+		margin: 0 auto;
+		img{
+
+			margin-top: -24px;
+		}
+	}
+
+	.group_btn{
+		position: absolute;
+		top: 12px;
+		right: 65px;
+		font-size: 24px;
+		div{
+			width: 86px;
+			height: 38px;
+			line-height: 38px;
+			border-radius: 5px;
+			text-align: center;
+			float: left;
+			cursor: pointer;
+		}
+		.login_in{
+			
+			border: 1px solid #fff;
+			color: #fff;
+			margin-right: 20px;
+		}
+		.login_up{
+			border: 1px solid #fff;
+			background-color: #fff;
+			color: #eb5d0a;
+		}
+	}
+}
+
+.recommend_broker{
+	margin-top: 50px;
+	.cards{
+		border: none;
+		box-shadow: none;
+		padding: 0;
+		.card{
+			width: 100%;
+		}
+	}
+
+	.recommend_header{
+		font-size: 24px;
+		text-align: center;
+		margin-top: 45px;
+	}
+	.recommend_more{
+		font-size: 16px;
+		font-weight: normal;
+		a{
+			display: inline-block;
+			padding: 10px 70px;
+			border: 1px solid #eb5d0a;
+		}
+		a:hover{
+			color: #000;
+		}
+		
+	}
+
+	
+}
+
+
+.recommend_project{
+	margin-top: 50px;
+
+	.segment{
+		border: none;
+		box-shadow: none;
+	}
+	.table{
+		margin: 0;
+		border: none;
+		box-shadow: none;
+
+	}
+	.ui.table thead th{
+		background: none;
+	}
+	.ui.table tr td{
+		border-top: none;
+	}
+
+	.recommend_more{
+		font-size: 16px;
+		font-weight: normal;
+		a{
+			display: inline-block;
+			padding: 10px 70px;
+			border: 1px solid #eb5d0a;
+		}
+		a:hover{
+			color: #000;
+		}
+		
+	}
+}
+
+
+

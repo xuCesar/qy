@@ -1,0 +1,284 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>qytest</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.css" />
+    <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/project-info.css">
+    <!-- <link rel="stylesheet" href="styles/index.css"> -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="app">
+      
+      <header id="header" class="header">
+          <div class="container">
+
+              <div class="header_bar">
+                <div class="left_wrap">
+                    <span class="header_logo">
+                        <img src="images/header_logo.png" alt="">
+                    </span>
+                    <span class="header_index">
+                      <a href="#">潜渊信息首页</a>
+                    </span> 
+                </div>
+                  
+                <div class="right_wrap">
+                    <span class="user_login_up">注册</span>
+                    <span>|</span>
+                    <span class="user_login_in">登录</span>
+                </div>
+              </div>
+          </div>
+      </header><!-- /header -->
+
+      <nav id="nav" class="nav">
+          <div class="container">
+            <div class="nav_wrap">
+                <div class="logo">
+                  <a href=""><img src="images/logo.png" alt=""></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="talent.html">人才中心</a></li>
+                    <li><a href="project-center.html">项目中心</a></li>
+                    <li><a href="contract.html">签约经纪人</a></li>
+                    <li><a href="personal-center.html">个人中心</a></li>
+                    <li><a href="help-center.html">帮助中心</a></li>
+                </ul>
+            </div>
+          </div>
+      </nav>
+
+      <div class="index_slogan">
+            <div class="ui column stackable grid container">
+
+                <div class="ui left floated six wide column">
+                      <div class="slogan ">
+                          <img src="images/nav_slogan.png" alt="">
+                      </div>
+                </div>
+                <div class="ui right floated five wide column">
+                      <div class="group_btn">
+                        <div class="test_btn">评测我的能力</div>
+                        <div class="tproject_btn">发起新的项目</div>
+                    </div>
+                </div>
+                
+            </div>
+      </div>
+
+
+      <div class="project_info">
+          
+          <div class="ui column stackable grid container">
+                <div class="row ">
+                    <div class="ui breadcrumb">
+                        <a class="section">潜渊信息</a>
+                        <i class="right angle icon divider"></i>
+                        <a class=" section">项目中心</a>
+                        <i class="right angle icon divider"></i>
+                        <a class="active section">创业公司整体产品外包项目</a>
+                    </div>
+                </div>
+
+                <div class="ui left floated eleven wide column">
+                      <div class="ui items user">
+                          <div class="item">
+                              <div class="content">
+                                <a class="header">创业公司整体产品外包项目</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui items">
+                          <div class="item">
+                              <div class="content"> <b>项目类别：</b>项目外包 </div>
+                              <div class="content"> <b>项目需求方：</b>上海潜渊信息科技有限公司 </div>
+                          </div>
+                          <div class="item">
+                              <div class="content"> <b>其他属性：</b>职位一、职位二、职位三、职位四、职位五 </div>
+                              <div class="content"> <b>其他属性：</b>职位一、职位二、职位三、职位四、职位五 </div>
+                          </div>
+                          <div class="item">
+                              <div class="content"> <b>其他属性：</b>职位一、职位二、职位三、职位四、职位五 </div>
+                              <div class="content"> <b>其他属性：</b>职位一、职位二、职位三、职位四、职位五 </div>
+                          </div>
+                          <div class="item">
+                              <div class="content"> <b>当前状态：</b>待承接 </div>
+                          </div>
+                      </div>
+
+
+                      <button class="ui google plus button"> 发起合作 </button>
+
+
+                      <div class="project_des">
+                      
+                          <div class="items">
+                              <div class="item">
+                                  <div class="ui grid">
+                                      <div class="sixteen wide column">
+                                        <h3 class="row">详情描述：</h3>
+                                        <p>该项目分为两部分：一部分是算法执行部分，该部分将算法执行结果放在postgresql数据库，另一部分则是从MySQL数据库中查看干扰小区原始数据。 </p>
+                                        <p>负责从MySQL数据库中读取原始数据呈献给前台页面，使用经典的Spring集成hibernate框架。数据访问层用hibernate实现，其中使用spring提供的sessionFactory.getCurrentSession()来获取session.（这样获取的session会自动开启与关闭事务），业务层实现业务逻辑，该项目只是简单地调用dao层的方法，对事物的管理使用spring的声明式事务管理（使用注解，简单方便）。表现层使用SpringMVC进行开发。另外，并对该项目用junit框架进行了简单地测试。 </p>
+                                        <p>SBridge 很早就出现在软件开发中，在一些桌面软件中很早就运用了这样的形式，多用在通知、产品详情、广告等模块中，然后这些模块中，使用的是 Web UI，而相关按钮点击后，调用的是 Native 功能。现在移动端盛行，不管是 Hybrid 应用，还是 React-Native 都离不开 JSBridge，当然也包括在国内举足轻重的微信小程序。</p>
+                                      </div>
+                                  </div>
+                                  <p></p>
+                              </div>
+                          </div>
+
+                      </div>
+
+                </div>
+
+                <div class="ui right floated five wide column self_sidebar">
+                      <div class="similar">
+                            <h3 class="ui left aligned header">优质项目推荐</h3>
+                            <div class="ui items">
+                                <div class="item">
+                                  <div class="content">
+                                      <h4 ><a href="#">创业公司整体产品外包项目</a></h4>
+                                      <div class="meta">
+                                        <p>项目类别：项目外包</p>
+                                        <p>项目甲方：上海潜渊信息科技有限公司</p>
+                                      </div>
+                                  </div>
+                                </div>
+
+                                <div class="item">
+                                  <div class="content">
+                                      <h4 >创业公司整体产品外包项目</h4>
+                                      <div class="meta">
+                                        <p>项目类别：项目外包</p>
+                                        <p>项目甲方：上海潜渊信息科技有限公司</p>
+                                      </div>
+                                  </div>
+                                </div>
+
+                                <div class="item">
+                                  <div class="content">
+                                      <h4 >创业公司整体产品外包项目</h4>
+                                      <div class="meta">
+                                        <p>项目类别：项目外包</p>
+                                        <p>项目甲方：上海潜渊信息科技有限公司</p>
+                                      </div>
+                                  </div>
+                                </div>
+
+                                <div class="item">
+                                  <div class="content">
+                                      <h4 >创业公司整体产品外包项目</h4>
+                                      <div class="meta">
+                                        <p>项目类别：项目外包</p>
+                                        <p>项目甲方：上海潜渊信息科技有限公司</p>
+                                      </div>
+                                  </div>
+                                </div>
+
+                                <div class="item">
+                                  <div class="content">
+                                      <h4 >创业公司整体产品外包项目</h4>
+                                      <div class="meta">
+                                        <p>项目类别：项目外包</p>
+                                        <p>项目甲方：上海潜渊信息科技有限公司</p>
+                                      </div>
+                                  </div>
+                                </div>
+
+                                <div class="item">
+                                  <div class="content">
+                                      <h4 >创业公司整体产品外包项目</h4>
+                                      <div class="meta">
+                                        <p>项目类别：项目外包</p>
+                                        <p>项目甲方：上海潜渊信息科技有限公司</p>
+                                      </div>
+                                  </div>
+                                </div>
+
+                            </div>
+                      </div>
+                </div>
+
+
+
+          </div>
+
+
+
+
+      </div>
+
+
+      <div class="ui black inverted vertical footer " id="footer">
+          <div class="ui column stackable grid container">
+              <div class="foot">
+                  <ul>
+                    <li><a href="#">能力测评</a></li>
+                    <li><a href="#">人才中心</a></li>
+                    <li><a href="#">经纪人签约申请</a></li>
+                    <li><a href="#">项目中心</a></li>
+                    <li><a href="#">个人中心</a></li>
+                    <li><a href="#">关于潜渊信息</a></li>
+                  </ul>
+
+                  <p>2017-2018 潜渊信息版权所有    |   沪公网备案信息123456789    |    沪ICP证XXXXXXX</p>
+              </div>
+          </div>
+      </div>
+
+      
+    </div>
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/semantic/dist/semantic.js"></script>
+    <script src="/bower_components/swiper/dist/js/swiper.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/project-center.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

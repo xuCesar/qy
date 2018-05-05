@@ -1,0 +1,55 @@
+@import './mixin.scss';
+
+
+.ui.grid.register_header{
+	// width: 1024px;
+	margin: 0 auto;
+	margin-top: 50px;
+	border-bottom: 1px solid #ccc;
+}
+.reg_title{
+	width: 100%;
+}
+.ui.header.registed{
+	font-size: 16px;
+	font-weight: normal;
+
+	a{
+		color: #f60;
+	}
+}
+
+.modify_wrap{
+	width: 100%;
+	min-height: 500px;
+	overflow: hidden;
+	margin: 0 auto;
+	// border: 1px solid #ccc;
+	margin-top: 50px;
+
+	
+	.ui.form{
+		.fields{
+			label{
+				width: 60px;
+			}
+			input{
+				width: 80%;
+			}
+
+		}
+		.verification{
+			input{
+				width: 40%;
+			}
+		}
+		
+	}
+
+	.terms{
+		color: #f60;
+	}
+	
+}
+
+

@@ -1,0 +1,180 @@
+@import 'common/basic.scss';
+.personal_center{
+    margin-top: 40px;
+
+    .sidebar{
+        dl{
+            dt{
+                height: 30px;
+                line-height: 30px;
+                font-size: 18px;
+                background-color: #f3f3f3;
+                margin-bottom: 10px;
+                text-indent: 10px;
+            }
+            dd{
+                margin: 0;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                text-indent: 10px;
+            }
+        }
+        dl:first-child{
+            margin-top: 0;
+        }
+        dl:last-child{
+            border: none;
+        }
+    }
+
+    .personal_content{
+        .item{
+            .ui.small{
+                .upload_avatar{
+                    width: 100%;
+                    margin-top: 10px;
+                    display: inline-block;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                
+            }
+            .content{
+                .meta{
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #000;
+                    span{
+                        margin-right: 30px;
+                    }
+                }
+                .name{
+                    font-weight: bold;
+                }
+            }
+        }
+        .project_name{
+            max-width: 300px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-align: left;
+        }
+        .ability_table,.project_table{
+            text-align: center;
+        }
+        .isstandby{
+            color: $basicColor;
+        }
+        .isactive{
+            color: $activeColor;
+        }
+        .isover{
+            color: $overColor;
+        }
+        
+    }
+    // 我的经纪人
+    .personal_mybroker{
+        thead{
+            th:first-child{
+                text-align: left;
+            }
+        }
+    }
+
+    .initiate_list{
+        width: 100%;
+        .item{
+            width: 100%;
+            height: 36px;
+            line-height: 36px;
+            margin-bottom: 15px;
+            div{
+                width: 200px;
+                float: left;
+            }
+            button{
+                float: right;
+            }
+            // div:last-child::after{
+            //     content: '';
+            //     width: 1px;
+            //     height: 1px;
+            //     clear: both;
+            // }
+        }
+    }
+
+    .cycle{
+        .list{
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+    }
+
+    .userinfo{
+        .headImg{
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            i{
+                font-style: normal;
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                line-height:150px;
+                text-align: center;
+                color: #fff;
+                left: 0;
+                top: 0;
+                z-index: 1;
+                background-color: rgba(0,0,0,.4);
+                cursor: pointer;
+            }
+        }
+        .update_info{
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 20px;
+            .label{
+                width: 100px;
+                text-align: center;
+            }
+            .input{
+                width: 400px;
+                margin-bottom: 10px;
+            }
+        }
+        .btn_wrap{
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

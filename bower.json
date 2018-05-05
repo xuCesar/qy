@@ -1,0 +1,21 @@
+{
+  "name": "qytest",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.1",
+    "semantic": "semantic-ui#^2.3.1",
+    "swiper": "Swiper#^4.2.0"
+  },
+  "overrides": {
+    "semantic": {
+      "main": [
+        "dist/semantic.css",
+        "dist/semantic.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4"
+  }
+}

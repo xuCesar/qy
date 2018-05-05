@@ -1,0 +1,78 @@
+.talent_center{
+    margin-top: 40px;
+
+    .row{
+      border-bottom: 1px solid #ccc;
+    }
+
+    .search_talent_btn{
+      position: absolute;
+      right: 0;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .district_titl{
+      margin: 0;
+      padding: 0;
+      margin-top: 40px;
+    }
+
+    .district_list{
+        .ui.table{
+          border:none;
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+        }
+
+        .all_list{
+          text-align: center;
+          // border-top: 1px solid #ccc;
+          // margin-top: 10px;
+          // line-height: 150%;
+        }
+    }
+
+    .ui.more_district, .ui.more_industry{
+      border: none;
+      box-shadow: none;
+      * {
+        border: none;
+      box-shadow: none;
+      }
+      .fourteen.column{
+        box-shadow: none;
+        border: none;
+        .segment{
+            box-shadow: none;
+            border: none;
+            // text-align: center;
+        }
+      }
+      
+      .fourteen{
+        li{
+          float: left;
+          padding: 5px 5px;
+        }
+      }
+
+    }
+
+
+
+    .industry_list{
+        .ui.table{
+          border:none;
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+        }
+
+        .all_list{
+          text-align: center;
+          // border-top: 1px solid #ccc;
+          // margin-top: 10px;
+          // line-height: 150%;
+        }
+    }
+}

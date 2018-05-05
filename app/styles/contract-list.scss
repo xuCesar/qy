@@ -1,0 +1,196 @@
+.contract_list{
+    margin-top: 40px;
+
+    .row{
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .selectNumberScreen{ 
+        width: 100%;
+    }
+
+    .screenBox {
+
+        dl{
+            border-bottom: #e6e6e6 1px dashed; 
+            overflow: hidden;
+        }
+        dl.noborder {
+            border: 0px;
+        }
+        dl.goodstype {
+            border-bottom: #e6e6e6 1px dashed;
+        }
+        dl .list_indus{
+            width: 90%;
+            height: 30px;
+            overflow: hidden;
+        }
+        
+        dl{
+            dt{
+                float: left; 
+                height: 30px;
+                display: flex;
+                align-items: center;
+            }
+            dd {
+                position: relative; 
+                float: left; 
+                overflow: hidden; 
+                padding: 0 48px 0 0;
+
+                span:not(.more){
+                    line-height: 14px; 
+                    margin: 9px 25px 0px 0px; 
+                    display: inline-block; 
+                    color: #000; 
+                    overflow: hidden; 
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+                span:hover{
+                    color: #eb5d0a; 
+                    text-decoration: underline;
+                }
+                span.selected {
+                    background: #eb5d0a; 
+                    color: #fff;
+                }
+                span.more {position: absolute; width: 39px; display: block; height: 30px; top: 6px; cursor: pointer; right: 1px}
+                span.more label {display: inline-block; cursor: pointer}
+            }
+        }
+
+    }
+
+    .hasBeenSelected {
+        padding:2px; 
+        margin-top: 10px; 
+        overflow: hidden;
+
+        dl{
+            background: #eee; 
+            overflow: hidden;
+
+            dt{
+                line-height: 30px; 
+                width: 108px; 
+                height: 30px; 
+                font-weight: 600;
+                float: left
+            }
+
+            dd{
+                width: 80%;
+                float: left
+            }
+
+        }
+        .clearDd{
+            height: 30px;
+            display: none;
+        }
+    }
+
+    .selectedkey {
+        position: relative; 
+        height: 30px;
+        line-height: 30px; 
+        border: #f60 1px solid;
+        padding: 0 20px 0 15px;
+        margin-right: 10px;
+        white-space: nowrap; 
+        background: #fff; 
+        float: left; 
+        box-sizing: border-box;
+
+        label{
+            color: #f60
+        }
+
+        em {
+            background: url("../images/close.gif") no-repeat;
+            cursor: pointer;
+            display: block;
+            height: 13px;
+            overflow: hidden;
+            position: absolute;
+            right: 2px;
+            top: 9px;
+            width: 13px;
+        }
+    }
+    .clear_key {
+        display: none;
+        line-height: 30px; 
+        float: left; 
+        color: #f60; 
+        cursor: pointer; 
+        font-weight: 600
+    }
+
+
+    .ui.table{
+        border:none;
+    }
+    .ui.celled.table tr th{
+        border-left:none;
+    }
+    .ui.celled.table tr td{
+        border-left:none;
+    }
+
+    
+    div.ui.items{
+        width: 100%;
+        #item{
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 1em !important;
+        }
+        .ability,.btn{
+            display: flex;
+            align-items: center;
+        }
+        .meta{
+            .column{
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .btn{
+
+        }
+    }
+
+    .page_turn.row{
+        border: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
