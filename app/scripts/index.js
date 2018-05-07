@@ -14,4 +14,6 @@ $(function(){
 	      },
 	});
 
+	$('.secondary.menu .item').tab();
+
 })

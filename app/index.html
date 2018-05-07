@@ -38,7 +38,7 @@
               <div class="header_bar">
                 <div class="left_wrap">
                     <span class="header_logo">
-                        <img src="images/header_logo.png" alt="">
+                        <a href="index.html"><img src="images/header_logo.png" alt=""></a>
                     </span>
                     <span class="header_index">
                       <a href="#">潜渊信息首页</a>
@@ -48,7 +48,7 @@
                 <div class="right_wrap">
                     <span class="user_login_up"><a href="register.html">注册</a></span>
                     <span>|</span>
-                    <span class="user_login_in">登录</span>
+                    <span class="user_login_in"><a href="login.html">登录</a></span>
                 </div>
               </div>
           </div>
@@ -58,7 +58,7 @@
           <div class="container">
             <div class="nav_wrap">
                 <div class="logo">
-                  <a href=""><img src="images/logo.png" alt=""></a>
+                  <a href="index.html"><img src="images/logo.png" alt=""></a>
                 </div>
                 <ul>
                     <li><a href="index.html">首页</a></li>
@@ -113,69 +113,172 @@
                   <div class="column">
                         <div class="ui segment">
                               <div class="index_list_title"><i class="content icon"></i>潜渊实力榜</div>
-                              <div class="ui three column grid index_list_header">
-                                  <div class="column center aligned active">综合榜</div>
-                                  <div class="column center aligned">北京榜</div>
-                                  <div class="column center aligned">上海榜</div>
+                              <div class="ui three column grid pointing secondary menu index_list_header">
+                                  <div class="column center aligned item active" data-tab="tab1">综合榜</div>
+                                  <div class="column center aligned item" data-tab="tab2">北京榜</div>
+                                  <div class="column center aligned item" data-tab="tab3">上海榜</div>
                               </div>
-                              <table class="ui table">
-                                <thead>
-                                  <tr>
-                                    <th class="center aligned">姓名</th>
-                                    <th class="center aligned">年龄</th>
-                                    <th class="center aligned">性别</th>
-                                    <th class="center aligned">行业</th>
-                                    <th class="center aligned">能力值</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td class="center aligned">张三</td>
-                                    <td class="center aligned">30</td>
-                                    <td class="center aligned">男</td>
-                                    <td class="center aligned">互联网</td>
-                                    <td class="center aligned">100</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="center aligned">张三</td>
-                                    <td class="center aligned">30</td>
-                                    <td class="center aligned">男</td>
-                                    <td class="center aligned">互联网</td>
-                                    <td class="center aligned">100</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="center aligned">张三</td>
-                                    <td class="center aligned">30</td>
-                                    <td class="center aligned">男</td>
-                                    <td class="center aligned">互联网</td>
-                                    <td class="center aligned">100</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="center aligned">张三</td>
-                                    <td class="center aligned">30</td>
-                                    <td class="center aligned">男</td>
-                                    <td class="center aligned">互联网</td>
-                                    <td class="center aligned">100</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="center aligned">张三</td>
-                                    <td class="center aligned">30</td>
-                                    <td class="center aligned">男</td>
-                                    <td class="center aligned">互联网</td>
-                                    <td class="center aligned">100</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="center aligned">张三</td>
-                                    <td class="center aligned">30</td>
-                                    <td class="center aligned">男</td>
-                                    <td class="center aligned">互联网</td>
-                                    <td class="center aligned">100</td>
-                                  </tr>
 
+                              <div class="ui table tab active" data-tab="tab1">
+                                <div class="tr">
+                                    <span>姓名</span>
+                                    <span>年龄</span>
+                                    <span>性别</span>
+                                    <span>行业</span>
+                                    <span>能力值</span>
+                                </div>
+                                <div class="list">
+                                  <li>
+                                    <span>张三</span>
+                                    <span>20</span>
+                                    <span>男</span>
+                                    <span>地产</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>翠花</span>
+                                    <span>23</span>
+                                    <span>女</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>张小三</span>
+                                    <span>43</span>
+                                    <span>女</span>
+                                    <span>建筑</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>李二狗</span>
+                                    <span>39</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>张三</span>
+                                    <span>27</span>
+                                    <span>男</span>
+                                    <span>金融</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>王小五</span>
+                                    <span>34</span>
+                                    <span>女</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                </div>
+                              </div>
+                              <div class="ui table tab " data-tab="tab2">
+                                <div class="tr">
+                                    <span>姓名</span>
+                                    <span>年龄</span>
+                                    <span>性别</span>
+                                    <span>行业</span>
+                                    <span>能力值</span>
+                                </div>
+                                <div class="list">
+                                  <li>
+                                    <span>张三</span>
+                                    <span>30</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>张三</span>
+                                    <span>30</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>张三</span>
+                                    <span>30</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>张三</span>
+                                    <span>30</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>张三</span>
+                                    <span>30</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>张三</span>
+                                    <span>30</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                </div>
+                              </div>
+                              <div class="ui table tab " data-tab="tab3">
+                                <div class="tr">
+                                    <span>姓名</span>
+                                    <span>年龄</span>
+                                    <span>性别</span>
+                                    <span>行业</span>
+                                    <span>能力值</span>
+                                </div>
+                                <div class="list">
+                                  <li>
+                                    <span>张三</span>
+                                    <span>30</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>张三</span>
+                                    <span>30</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>张三</span>
+                                    <span>30</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>张三</span>
+                                    <span>30</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>张三</span>
+                                    <span>30</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                  <li>
+                                    <span>张三</span>
+                                    <span>30</span>
+                                    <span>男</span>
+                                    <span>互联网</span>
+                                    <span>100</span>
+                                  </li>
+                                </div>
+                              </div>
 
-
-                                </tbody>
-                              </table>
                               <p class="ui center aligned all_list"><a href="#">查看完整榜单</a></p>
                         </div>
                   </div>
@@ -192,8 +295,8 @@
               </div>
               
               <div class="group_btn">
-                  <div class="login_in">登录</div>
-                  <div class="login_up">注册</div>
+                  <div class="login_in"><a href="login.html">登录</a></div>
+                  <div class="login_up"><a href="register.html">注册</a></div>
               </div>
 
           </div>

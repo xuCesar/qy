@@ -54,19 +54,37 @@ gulp.task('lint:test', () => {
     .pipe(gulp.dest('test/spec'));
 });
 
+// gulp.task('html', ['styles', 'scripts'], () => {
+//   return gulp.src('app/*.html')
+//     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
+//     // .pipe($.inlineSource()) // inlinecss & inlinejs
+//     .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
+//     .pipe($.if(/\.css$/, $.cssnano({
+//       safe: false,
+//       autoprefixer: false,
+//       reduceIdents: false,
+//       discardUnused: false,
+//       reduceTransforms: false,
+//       zindex: false
+//     })))
+//     .pipe($.if(/\.html$/, $.htmlmin({
+//       collapseWhitespace: true,
+//       minifyCSS: true,
+//       minifyJS: {compress: {drop_console: true}},
+//       processConditionalComments: true,
+//       removeComments: true,
+//       removeEmptyAttributes: true,
+//       removeScriptTypeAttributes: true,
+//       removeStyleLinkTypeAttributes: true
+//     })))
+//     .pipe(gulp.dest('dist'));
+// });
+
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
-    .pipe($.inlineSource()) // inlinecss & inlinejs
     .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
-    .pipe($.if(/\.css$/, $.cssnano({
-      safe: false,
-      autoprefixer: false,
-      reduceIdents: false,
-      discardUnused: false,
-      reduceTransforms: false,
-      zindex: false
-    })))
+    .pipe($.if(/\.css$/, $.cssnano({safe: true, autoprefixer: false})))
     .pipe($.if(/\.html$/, $.htmlmin({
       collapseWhitespace: true,
       minifyCSS: true,
@@ -80,9 +98,20 @@ gulp.task('html', ['styles', 'scripts'], () => {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('maxhtml', ['styles', 'scripts'], () => {
+  return gulp.src('app/*.html')
+    .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('images', () => {
   return gulp.src('app/images/**/*')
     .pipe($.cache($.imagemin()))
+    .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('imagesCopy', () => {
+  return gulp.src('app/images/**/*')
     .pipe(gulp.dest('dist/images'));
 });
 
@@ -185,6 +214,14 @@ gulp.task('wiredep', () => {
 
 gulp.task('build', ['lint', 'html', 'extras', 'assets'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+});
+
+gulp.task('minBuildSon', ['lint', 'maxhtml', 'imagesCopy', 'fonts', 'extras'], () => {
+  return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+});
+
+gulp.task('minbuild', ['clean'], () => {
+  gulp.start('minBuildSon');
 });
 
 gulp.task('default', () => {
