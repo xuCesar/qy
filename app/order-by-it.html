@@ -1,0 +1,417 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>qytest</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.css" />
+    <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/talent.css">
+    <!-- <link rel="stylesheet" href="styles/index.css"> -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="app">
+      
+      <header id="header" class="header">
+          <div class="container">
+
+              <div class="header_bar">
+                <div class="left_wrap">
+                    <span class="header_logo">
+                        <a href="index.html"><img src="images/header_logo.png" alt=""></a>
+                    </span>
+                    <span class="header_index">
+                      <a href="index.html">潜渊信息首页</a>
+                    </span> 
+                </div>
+                  
+                <div class="right_wrap">
+                    <span class="user_login_up"><a href="register.html">注册</a></span>
+                    <span>|</span>
+                    <span class="user_login_in"><a href="login.html">登录</a></span>
+                </div>
+              </div>
+          </div>
+      </header><!-- /header -->
+
+      <nav id="nav" class="nav">
+          <div class="container">
+            <div class="nav_wrap">
+                <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="talent.html">人才中心</a></li>
+                    <li><a href="project-center.html">项目中心</a></li>
+                    <li><a href="contract.html">签约经纪人</a></li>
+                    <li><a href="personal-center.html">个人中心</a></li>
+                    <li><a href="help-center.html">帮助中心</a></li>
+                </ul>
+            </div>
+          </div>
+      </nav>
+
+      <div class="index_slogan">
+            <div class="ui column stackable grid container">
+
+                <div class="ui left floated six wide column">
+                      <div class="slogan ">
+                          <img src="images/nav_slogan.png" alt="">
+                      </div>
+                </div>
+                <div class="ui right floated five wide column">
+                      <div class="group_btn">
+                        <div class="test_btn">评测我的能力</div>
+                        <div class="tproject_btn">发起新的项目</div>
+                    </div>
+                </div>
+                
+            </div>
+      </div>
+
+
+      <div class="talent_center">
+          <div class="ui column stackable grid container">
+              <div class="row ">
+                  <div class="ui breadcrumb">
+                      <a class="section">潜渊信息</a>
+                      <i class="right angle icon divider"></i>
+                      <a class="section">人才中心</a>
+                      <i class="right angle icon divider"></i>
+                      <a class="active section">互联网行业榜</a>
+                  </div>
+
+                  <div class="ui search_talent_btn">
+                      <a class="section" href="talent-list.html">精确搜索人才</a>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="ui column stackable grid container order_list">
+            <table class="ui celled table">
+                <thead>
+                    <tr>
+                      <th class="ui left aligned">排名</th>
+                      <th class="ui center aligned">姓名</th>
+                      <th class="ui center aligned">年龄</th>
+                      <th class="ui center aligned">性别</th>
+                      <th class="ui center aligned">地区</th>
+                      <th class="ui center aligned">行业</th>
+                      <th class="ui center aligned">工作年限</th>
+                      <th class="ui center aligned">综合能力值</th>
+                      <th class="ui center aligned">是否签约</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">金融</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">互联网</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">医药</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">互联网</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">农林</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">银行</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">未签约</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">金融</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">互联网</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">未签约</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">医药</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">未签约</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">地产</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">地产</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">银行</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">金融</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">互联网</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">金融</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">金融</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">金融</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">金融</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">金融</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td class="ui center aligned">张三</td>
+                    <td class="ui center aligned">34</td>
+                    <td class="ui center aligned">男</td>
+                    <td class="ui center aligned">北京</td>
+                    <td class="ui center aligned">金融</td>
+                    <td class="ui center aligned">15</td>
+                    <td class="ui center aligned">96</td>
+                    <td class="ui center aligned">已签约</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="9">
+                        <div class="ui right floated pagination menu">
+                          <a class="icon item"> <i class="left chevron icon"></i> </a>
+                          <a class="item">1</a>
+                          <a class="item">2</a>
+                          <a class="item">3</a>
+                          <a class="icon item"> <i class="right chevron icon"></i> </a>
+                          <span class="ui center aligned item">共5页，100条</span>
+                        </div>
+                      </th>
+                    </tr>
+                </tfoot>
+            </table>
+          </div>
+
+
+      </div>
+
+
+      <div class="ui black inverted vertical footer " id="footer">
+          <div class="ui column stackable grid container">
+              <div class="foot">
+                  <ul>
+                    <li><a href="#">能力测评</a></li>
+                    <li><a href="#">人才中心</a></li>
+                    <li><a href="#">经纪人签约申请</a></li>
+                    <li><a href="#">项目中心</a></li>
+                    <li><a href="#">个人中心</a></li>
+                    <li><a href="#">关于潜渊信息</a></li>
+                  </ul>
+
+                  <p>2017-2018 潜渊信息版权所有    |   沪公网备案信息123456789    |    沪ICP证XXXXXXX</p>
+              </div>
+          </div>
+      </div>
+
+      
+    </div>
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/semantic/dist/semantic.js"></script>
+    <script src="/bower_components/swiper/dist/js/swiper.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

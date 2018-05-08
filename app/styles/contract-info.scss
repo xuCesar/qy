@@ -5,6 +5,10 @@
       border-bottom: 1px solid #ccc;
     }
 
+    .ui.grid{
+        margin: 0;
+    }
+
     .user{
         .content{
           .meta{
@@ -19,7 +23,9 @@
       margin-bottom: 0;
     }
 
-    
+    .user_about{
+        margin-top: 20px;
+    }
 
     .user_intro{
         width: 100%;

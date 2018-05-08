@@ -75,4 +75,16 @@
           // line-height: 150%;
         }
     }
+
+    .ui.grid + .grid{
+      margin: 2em;
+    }
+    .order_list{
+      margin: 0;
+
+      .ui.table{
+        border: none;
+        padding: 0;
+      }
+    }
 }
